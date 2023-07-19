@@ -1,5 +1,5 @@
 CREATE TABLE product (
-  product_id INT PRIMARY KEY,
+  product_id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(255),
   unit_of_measure VARCHAR(50),
   unit_price DECIMAL(10, 2),
