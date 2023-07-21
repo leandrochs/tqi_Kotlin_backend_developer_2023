@@ -22,7 +22,7 @@ data class Product(
     val unit_of_measure: String = "",
 
     @get: Nullable
-    val unit_price: BigDecimal = BigDecimal.ZERO,
+    val unit_price: Double = 1.11,
 
     @get: Nullable
     val quantity: Long? = 0,
