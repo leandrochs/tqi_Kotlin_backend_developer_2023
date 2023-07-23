@@ -1,0 +1,22 @@
+INSERT INTO product (product_id, name, unit_of_measure, unit_price, category_id)
+VALUES
+    (1, 'Arroz', 'kg', 5.99, 1),
+    (2, 'Feijão', 'kg', 4.99, 1),
+    (3, 'Refrigerante', 'unidade', 3.49, 2),
+    (4, 'Sabonete', 'unidade', 1.99, 3),
+    (5, 'Biscoito', 'pacote', 2.49, 4),
+    (6, 'Leite', 'litro', 3.99, 5),
+    (7, 'Café', 'grama', 6.99, 6),
+    (8, 'Chocolate', 'barra', 4.49, 7),
+    (9, 'Detergente', 'unidade', 2.99, 8),
+    (10, 'Pão', 'unidade', 0.99, 9),
+    (11, 'Macarrão', 'pacote', 2.99, 1),
+    (12, 'Óleo de Soja', 'litro', 4.49, 1),
+    (13, 'Água Mineral', 'garrafa', 1.99, 2),
+    (14, 'Shampoo', 'frasco', 7.99, 3),
+    (15, 'Bolacha', 'pacote', 2.49, 4),
+    (16, 'Iogurte', 'unidade', 1.49, 5),
+    (17, 'Açúcar', 'kg', 3.99, 6),
+    (18, 'Sorvete', 'litro', 8.99, 7),
+    (19, 'Amaciante', 'garrafa', 6.99, 8),
+    (20, 'Bolo', 'unidade', 12.99, 9);
