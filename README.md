@@ -19,3 +19,11 @@ docker run -d --rm --name mysql-server -v jumarket-mysql:/var/lib/mysql -p 3306:
 Migrations
 Na raíz do projeto:
 `./gradlew flywayMigrate -i`
+
+
+### Banco de Dados
+
+Tabelas
+    category (category_id, name)
+    product (product_id, name, unit_of_measure, unit_price, quantity, category_id)
+    
