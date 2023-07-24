@@ -20,10 +20,21 @@ Migrations
 Na raíz do projeto:
 `./gradlew flywayMigrate -i`
 
+Rodar backend
+./gradlew bootRun
+
 
 ### Banco de Dados
 
 Tabelas
     category (category_id, name)
     product (product_id, name, unit_of_measure, unit_price, quantity, category_id)
+
+
+
+
+TODO:
+[] habilitar CORS global  https://spring.io/blog/2015/06/08/cors-support-in-spring-framework
+
+
     
