@@ -14,7 +14,7 @@ export default function GetCategory() {
   useEffect(() => getApi, [])
 
   return (
-    <div>
+    <div className='container'>
       <h1>Categorias Cadastradas</h1>
       <section>
         {categories &&
@@ -25,7 +25,7 @@ export default function GetCategory() {
           ))
         }
       </section>
-      <div>
+      <div className='link-router'>
         <Link to='/admin'>
           VOLTAR
         </Link>
