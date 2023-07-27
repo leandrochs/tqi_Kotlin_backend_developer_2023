@@ -5,11 +5,15 @@ import postApiCategories from '../../services/postApiCategories';
 
 export default function PostCategory() {
   const [categorie, setCategorie] = useState("");
+  const [newCategorie, setNewCategorie] = useState("");
 
   async function getApi() {
     const res = await postApiCategories(categorie);
     if (res.errorMessage) {
       console.log(res.errorMessage);
+    } else {
+      setNewCategorie(res)
+      console.log(res);
     }
     setCategorie("")
   }
@@ -20,7 +24,7 @@ export default function PostCategory() {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h1>Nome da Nova Categoria</h1>
       <section>
         <form>
@@ -28,7 +32,10 @@ export default function PostCategory() {
             type='text'
             value={categorie}
             placeholder='Nova Categoria'
-            onChange={({ target }) => setCategorie(target.value)}
+            onChange={({ target }) => {
+              setCategorie(target.value);
+              setNewCategorie('')
+            }}
           />
           <button
             className='form-buttonSubmit'
@@ -40,11 +47,19 @@ export default function PostCategory() {
           </button>
         </form>
       </section>
-      <div>
-        <Link to='/admin'>
-          VOLTAR
-        </Link>
-      </div>
+      <section id='display-section-new-category'>
+        {
+          newCategorie &&
+          `Nova categoria: ${newCategorie.name} - id: ${newCategorie.category_id}`
+        }
+      </section>
+      <section id='link-router-section'>
+        <div className='link-router'>
+          <Link to='/admin'>
+            VOLTAR
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
