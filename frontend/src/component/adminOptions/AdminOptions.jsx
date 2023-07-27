@@ -12,7 +12,7 @@ export default function AdminOptions() {
       <Link to="/admin/postcategory" className='link-admin'>
         Cadastrar Categorias
       </Link>
-      <Link to="/putcategory" className='link-admin'>
+      <Link to="/admin/putcategory" className='link-admin'>
         Atualizar Categorias
       </Link>
       <Link to="/getproduct" className='link-admin'>
