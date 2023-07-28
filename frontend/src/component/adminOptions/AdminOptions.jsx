@@ -16,13 +16,13 @@ export default function AdminOptions() {
         Atualizar Categorias
       </Link>
       <Link to="/getproduct" className='link-admin'>
-        Consultar Produtos
+        Consultar Produtos (implementar)
       </Link>
       <Link to="/postproduct" className='link-admin'>
-        Cadastrar Produtos
+        Cadastrar Produtos (implementar)
       </Link>
       <Link to="/putproduct" className='link-admin'>
-        atualizar Produtos
+        atualizar Produtos (implementar)
       </Link>
     </div>
   );
