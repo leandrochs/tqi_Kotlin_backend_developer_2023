@@ -61,9 +61,11 @@ Comando na raíz do projeto backend:
 
 ### III - Banco de Dados
 
-Tabelas
-    category (category_id, name)
-    product (product_id, name, unit_of_measure, unit_price, quantity, category_id)
+**Tabelas**
+
+- category (category_id, name)
+
+- product (product_id, name, unit_of_measure, unit_price, quantity, category_id)
 
 
 ### IV - TODO:
