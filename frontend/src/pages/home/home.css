@@ -1,0 +1,13 @@
+#home-container {
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-link-container {
+    font-size:xx-large;
+    margin: 2em;
+}
