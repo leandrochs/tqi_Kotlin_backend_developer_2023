@@ -3,7 +3,7 @@ VALUES
   (1, 'Bebidas'),
   (2, 'Limpeza'),
   (3, 'Doces'),
-  (4, 'Carnes'),
+  (4, 'Mercearia'),
   (5, 'Frutas'),
   (6, 'Vegetais'),
   (7, 'Padaria'),
