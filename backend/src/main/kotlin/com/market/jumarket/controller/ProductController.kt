@@ -25,6 +25,16 @@ class ProductController(private val productRepository: ProductRepository) {
         }.orElse(ResponseEntity.notFound().build())
     }
 
+    @GetMapping("/product/categoryid/{id}")
+    fun getProductByCategoryId(@PathVariable(value = "id") categoryId: Long): ResponseEntity<List<Product>> {
+        val products = productRepository.findAllProductsByCategoryId(categoryId)
+        return if (products.isEmpty()) {
+            ResponseEntity.notFound().build()
+        } else {
+            ResponseEntity.ok(products)
+        }
+    }
+
     @PutMapping("/product/{id}")
     fun updateProductById(
         @PathVariable(value = "id") productId: Long,
@@ -46,7 +56,7 @@ class ProductController(private val productRepository: ProductRepository) {
     @DeleteMapping("/product/{id}")
     fun deleteProductById(@PathVariable(value = "id") productId: Long): ResponseEntity<Void> {
 
-        return productRepository.findById(productId).map { product  ->
+        return productRepository.findById(productId).map { product ->
             productRepository.delete(product)
             ResponseEntity<Void>(HttpStatus.OK)
         }.orElse(ResponseEntity.notFound().build())
