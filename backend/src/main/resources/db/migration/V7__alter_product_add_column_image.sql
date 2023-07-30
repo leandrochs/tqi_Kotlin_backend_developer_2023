@@ -1,0 +1,1 @@
+ALTER TABLE product ADD image VARCHAR(255);
