@@ -19,6 +19,9 @@ data class Product(
     val name: String = "",
 
     @get: NotBlank
+    val image: String = "",
+
+    @get: NotBlank
     val unit_of_measure: String = "",
 
     @get: Nullable

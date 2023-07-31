@@ -44,6 +44,7 @@ class ProductController(private val productRepository: ProductRepository) {
         return productRepository.findById(productId).map { existingProduct ->
             val updatedProduct: Product = existingProduct.copy(
                 name = newProduct.name,
+                image = newProduct.image,
                 unit_of_measure = newProduct.unit_of_measure,
                 unit_price = newProduct.unit_price,
                 quantity = newProduct.quantity,
