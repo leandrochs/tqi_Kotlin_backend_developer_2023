@@ -1,0 +1,18 @@
+#button-market-container {
+    margin-bottom: 2em;
+}
+
+#sections-container {
+    display: flex;
+}
+
+#categories-section-container {
+    width: 18vh;
+}
+
+#card-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 82vh;
+}
