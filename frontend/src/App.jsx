@@ -7,6 +7,7 @@ import GetCategory from './pages/getCategory/GetCategory';
 import PostCategory from './pages/postCategory/PostCategory';
 import PutCategory from './pages/putCategory/PutCategory';
 import Market from './pages/market/Market';
+import Cart from './pages/cart/Cart';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/admin/postcategory' component={PostCategory} />
         <Route exact path='/admin/putcategory' component={PutCategory} />
         <Route exact path='/market' component={Market} />
+        <Route exact path='/market/cart' component={Cart} />
       </Provider>
     </Switch>
   );
