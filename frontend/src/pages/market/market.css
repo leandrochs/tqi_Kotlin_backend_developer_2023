@@ -1,6 +1,8 @@
-#admin-container {
-    /* border: solid 1px red; */
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
+#title-container {
+    text-align: center;
+}
+
+#link-cart-container {
+    text-align: end;
+    padding: 2rem;
 }
