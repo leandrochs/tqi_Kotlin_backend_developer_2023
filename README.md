@@ -36,13 +36,13 @@ sobe o frontend.
 
 **2) Subir com docker compose**
 
-Essa opção ainda está em construção. 
+Essa opção está em construção. 
 Houve problemas ao fazer o backend se comunicar com o banco de dados, o que foi contornado provisoriamente subindo o banco de dados e o frontend com docker compose e subindo o backend depois separadamente.
 Estamos trabalhando nisso!!
 
 **3) Subir banco de dados e frontend com docker compose e subir backend individualmente**
 
-a) Comando na raíz do projeto (onde está o arquivo docker-compose.yml)
+a) Comando na raiz do projeto (onde está o arquivo docker-compose.yml)
 
 `docker compose up -d`
 
@@ -72,4 +72,5 @@ Comando na raíz do projeto backend:
 - [ ] Habilitar CORS global  https://spring.io/blog/2015/06/08/cors-support-in-spring-framework
 - [ ] Fazer todo sistema subir com docker compose https://bmuschko.com/blog/gradle-docker-compose/
 - [ ] Adicionar autenticação para rota admin
+- [ ] Tratar exceções
     
