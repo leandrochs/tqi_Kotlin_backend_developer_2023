@@ -1,0 +1,16 @@
+#title-container {
+    text-align: center;
+}
+
+#link-cart-container {
+    text-align: end;
+    padding: 2rem;
+}
+
+#total-container{
+    text-align: center;
+}
+
+#checkout-button-container{
+    text-align: center;
+}
